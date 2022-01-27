@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a id="leaderboard" style="cursor: pointer;" onclick="showScore()">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+            </i></a>
+        <span>Time: <span id="time"></span>
+        </span>
+    </header>
+    <main>
+        <div id="hero" class="box">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit</p>
+            <p>Keep in mind that incorrect answers will penaltize your score/time by ten seconds!</p>
+            <button id="btn">Start Quiz</button>
+        </div>
+        <div id="ques" class="box" style="display: none;">
+            <h1>Which of the following is a statement that can be used to terminate a loop, switch or label statement?</h1>
+            <div class="option" value="a">1. break</div>
+            <div class="option" value="b">2. stop</div>
+            <div class="option" value="c">3. halt</div>
+            <div class="option" value="d">4. exit</div>
+            <div id="st">Correct</div>
+        </div>
+        <div id="ovr" class="box" style="display: none;">
+            <h1>All done!</h1>
+            <span>Your Final Score is <span id="tm"></span></span> <br>
+            <span>Enter Initials <input id="initial" type="text" size="10"> <button id="ovrSbt">Submit</button></span> 
+        </div>
+        <div id="hScore" class="box" style="display: none;">
+            <h1>Highscores</h1>
+            <div id="ms"></div>
+            <button onclick="location.reload()">Go Back</button>
+            <button onclick="clearHighScore()">clear Highscores</button>
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
